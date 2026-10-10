@@ -1,218 +1,325 @@
-<!-- @format -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQCXPZ6257"></script>
 		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-BQCXPZ6257');
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-BQCXPZ6257");
 		</script>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Maruenda Anthony - PortFolio</title>
+		<title>Anthony Maruenda · Développeur Full Stack</title>
+		<meta
+			name="description"
+			content="Anthony Maruenda, développeur full stack (React, Next.js, Angular, NestJS, Laravel). Je conçois des applications web et des sites sur mesure pour les entreprises et les artisans."
+		/>
+		<meta property="og:title" content="Anthony Maruenda · Développeur Full Stack" />
+		<meta
+			property="og:description"
+			content="Applications web et sites sur mesure, du back-end au front-end."
+		/>
+		<meta property="og:image" content="img/projets/cwood.jpg" />
+		<meta property="og:type" content="website" />
+		<meta name="theme-color" content="#f6f1ea" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b4532a'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23fff'%3EAM%3C/text%3E%3C/svg%3E"
+		/>
 
-		<!-- CSS  -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Manrope:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="css/style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<nav class="white" role="navigation">
-			<div class="nav-wrapper container">
-				<!-- Dropdown Trigger -->
-				<!-- <a class="dropdown-trigger btn" href="#" data-target="dropdown1">Menu</a> -->
+		<a class="skip" href="#main">Aller au contenu</a>
 
-				<!-- Dropdown Structure -->
-				<!--	<ul id="dropdown1" class="dropdown-content">
-					<li><a href="#">Accueil</a></li>
-				 <li><a href="#propos">A propos</a></li>
-					<li><a href="#skills">Compétences</a></li>
-					<li>
-						<a href="#portfolio">Portfolio</a>
-					</li> 
-				</ul>-->
-
-        <!-- <a id="logo-container" href="#" class="brand-logo">Logo</a> -->
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#propos">A propos</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">PortFolio</a></li>
-        </ul>
-
-				<ul id="nav-mobile" class="sidenav">
-					<li><a href="#propos">A propos</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">PortFolio</a></li>
-				</ul>
-				<a href="#" data-target="nav-mobile" class="sidenav-trigger"
-					><i class="material-icons">menu</i></a
-				>
+		<header class="nav">
+			<div class="wrap nav__inner">
+				<a class="nav__brand" href="#top" aria-label="Accueil">
+					<span class="nav__mono">AM</span>
+					<span class="nav__name">Anthony Maruenda</span>
+				</a>
+				<button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+					<span></span><span></span>
+				</button>
+				<nav id="nav-links" class="nav__links">
+					<a href="#projets">Projets</a>
+					<a href="#parcours">Parcours</a>
+					<a href="#competences">Compétences</a>
+					<a href="#contact" class="btn btn--small">Me contacter</a>
+				</nav>
 			</div>
-		</nav>
+		</header>
 
-		<div id="index-banner" class="parallax-container">
-			<div class="section no-pad-bot">
-				<div class="container">
-					<br /><br />
-					<!-- <h1 class="header left .green.darken-3 text-lighten-2">Anthony Maruenda</h1> -->
-          <h1 class="headers">Anthony Maruenda</h1>
-
-					<!-- <div class="row center"></div> -->
-					<br /><br />
-				</div>
-			</div>
-			<div class="parallax profile">
-				<img src="./img/background1.jpg" alt="Anthony Maruenda profil" />
-			</div>
-		</div>
-
-		<div class="container">
-			<div id="propos" class="section">
-				<!--   Icon Section   -->
-				<div class="row">
-					<h4 class="center">💻 Développeur Full Stack passionné, reconverti avec conviction
-					</h4>
-					<p class="light center">
-						Après 10 années d'expérience chez SFR, j’ai choisi de suivre ma passion pour le développement web. Formé intensivement à la Coding Academy by Epitech, je suis aujourd’hui développeur full stack depuis juin 2022, capable de concevoir des applications web modernes, performantes et bien pensées — du back-end au front-end.
-Je mêle rigueur professionnelle et créativité technique pour donner vie à des projets ambitieux.
+		<main id="main">
+			<!-- Hero -->
+			<section id="top" class="hero wrap">
+				<div class="hero__text">
+					<p class="eyebrow">Développeur full stack · depuis 2022</p>
+					<h1>
+						Des applications web <em>bien pensées</em>, du back&#8209;end au front&#8209;end.
+					</h1>
+					<p class="hero__lead">
+						Je m'appelle Anthony. Après dix ans dans les télécoms chez SFR, je me suis
+						reconverti au développement à la Coding Academy by Epitech. Aujourd'hui je
+						construis des outils métier chez YZY Digital et des sites sur mesure pour
+						des artisans et indépendants.
 					</p>
+					<div class="hero__cta">
+						<a href="#projets" class="btn">Voir mes projets</a>
+						<a href="cv/Maruenda%20Anthony%20CV%202.pdf" class="btn btn--ghost" download>
+							Télécharger mon CV
+						</a>
+					</div>
 				</div>
-			</div>
-		</div>
+				<figure class="hero__photo">
+					<img src="img/portrait.jpg" alt="Portrait d'Anthony Maruenda" width="600" height="600" />
+					<figcaption>
+						<span class="dot" aria-hidden="true"></span>
+						Basé à Bromeilles (45) · ouvert aux missions freelance
+					</figcaption>
+				</figure>
+			</section>
 
-		<div class="parallax-container valign-wrapper">
-			<div class="section">
-				<div class="container">
-					<!-- <div class="row center"></div> -->
-				</div>
-			</div>
-			<div class="parallax"><img src="./img/code.jpeg" alt="code - JavaScript" /></div>
-		</div>
+			<section class="facts wrap" aria-label="En bref">
+				<div><strong>4 ans</strong><span>de développement full stack</span></div>
+				<div><strong>10 ans</strong><span>d'expérience télécom chez SFR</span></div>
+				<div><strong>3 sites</strong><span>clients en production</span></div>
+				<div><strong>Agile</strong><span>chef de projet sur une équipe de 8 devs</span></div>
+			</section>
 
-		<div class="container">
-			<div id="skills" class="section">
-				<div class="row">
-					<div class="skills center">
-						<h3><i class="mdi-content-send brown-text"></i></h3>
-						<h4>Compétences</h4>
-						
-            <div class="left">
-							<div class="skill">
-								<p>HTML5 / CSS3</p>
-								<div class="progress">
-									<div class="determinate" style="width: 90%"></div>
-								</div>
-							</div>
+			<!-- Projets -->
+			<section id="projets" class="section wrap">
+				<header class="section__head">
+					<p class="eyebrow">Projets</p>
+					<h2>Sites en ligne</h2>
+					<p class="section__intro">
+						Des sites vitrines conçus et développés de A à Z pour des artisans et
+						indépendants : design, intégration, espace d'administration et mise en ligne.
+					</p>
+				</header>
 
-							<div class="skill">
-								<p>JavaScript</p>
-								<div class="progress">
-									<div class="determinate" style="width: 70%"></div>
-								</div>
-							</div>
-
-							<div class="skill">
-								<p>PHP</p>
-								<div class="progress">
-									<div class="determinate" style="width: 70%"></div>
-								</div>
-							</div>
-
-							<div class="skill">
-								<p>Python</p>
-								<div class="progress">
-									<div class="determinate" style="width: 50%"></div>
-								</div>
-							</div>
+				<div class="featured">
+					<article class="project project--featured reveal">
+						<a class="project__media" href="https://cwoodcreations.fr" target="_blank" rel="noopener">
+							<img src="img/projets/cwood.jpg" alt="Page d'accueil du site C Wood Créations" loading="lazy" width="1400" height="716" />
+						</a>
+						<div class="project__body">
+							<h3>C Wood Créations</h3>
+							<p>
+								Site d'un artisan menuisier : mobilier bois &amp; acier, menuiserie
+								d'agencement et facture d'orgues. Galerie de réalisations et espace admin.
+							</p>
+							<a class="link" href="https://cwoodcreations.fr" target="_blank" rel="noopener">cwoodcreations.fr <span aria-hidden="true">↗</span></a>
 						</div>
+					</article>
 
+					<article class="project project--featured reveal">
+						<a class="project__media" href="https://ceremoniesacree.fr" target="_blank" rel="noopener">
+							<img src="img/projets/ceremonie-sacree.jpg" alt="Page d'accueil du site Cérémonie sacrée" loading="lazy" width="1400" height="646" />
+						</a>
+						<div class="project__body">
+							<h3>Cérémonie sacrée</h3>
+							<p>
+								Site d'une maîtresse de cérémonie laïque à Bayonne : présentation des
+								services, témoignages et demande de devis.
+							</p>
+							<a class="link" href="https://ceremoniesacree.fr" target="_blank" rel="noopener">ceremoniesacree.fr <span aria-hidden="true">↗</span></a>
+						</div>
+					</article>
 
-						<div class="right">
-							<div class="skill">
-								<p>NodeJS</p>
-								<div class="progress">
-									<div class="determinate" style="width: 70%"></div>
-								</div>
-							</div>
+					<article class="project project--featured reveal">
+						<a class="project__media" href="https://latelier-danto.fr/" target="_blank" rel="noopener">
+							<img src="img/projets/atelier-danto.jpg" alt="Page à propos du site L'atelier d'Anto" loading="lazy" width="1400" height="702" />
+						</a>
+						<div class="project__body">
+							<h3>L'atelier d'Anto</h3>
+							<p>
+								Mon atelier d'impression 3D : créations artisanales, lightbox sur
+								commande, avis clients et console d'administration.
+							</p>
+							<a class="link" href="https://latelier-danto.fr/" target="_blank" rel="noopener">latelier-danto.fr <span aria-hidden="true">↗</span></a>
+						</div>
+					</article>
+				</div>
 
-							<div class="skill">
-								<p>NextJs</p>
-								<div class="progress">
-									<div class="determinate" style="width: 70%"></div>
-								</div>
-							</div>
+				<header class="section__head section__head--sub">
+					<h2>Projets de formation</h2>
+					<p class="section__intro">Réalisés en équipe pendant la Coding Academy by Epitech.</p>
+				</header>
 
-							<div class="skill">
-								<p>VueJS</p>
-								<div class="progress">
-									<div class="determinate" style="width: 70%"></div>
-								</div>
-							</div>
+				<div class="grid">
+					<article class="project reveal">
+						<div class="project__media"><img src="img/projets/yowl.jpg" alt="Capture de Yowl" loading="lazy" width="1400" height="1189" /></div>
+						<div class="project__body">
+							<h3>Yowl</h3>
+							<p>Réseau social d'actualités : publications, tendances, recherche, filtres et espace admin.</p>
+						</div>
+					</article>
+					<article class="project reveal">
+						<div class="project__media"><img src="img/projets/planbmotos.jpg" alt="Capture de Plan B Motos" loading="lazy" width="1400" height="1216" /></div>
+						<div class="project__body">
+							<h3>Plan B Motos</h3>
+							<p>Site vitrine pour un garage moto : services, horaires et présentation de l'atelier.</p>
+						</div>
+					</article>
+					<article class="project reveal">
+						<div class="project__media"><img src="img/projets/dashboard.jpg" alt="Capture du Dashboard" loading="lazy" width="1400" height="982" /></div>
+						<div class="project__body">
+							<h3>Dashboard</h3>
+							<p>Tableau de bord à widgets connectés à des API : traduction, dictionnaire, recherche, actus.</p>
+						</div>
+					</article>
+					<article class="project reveal">
+						<div class="project__media"><img src="img/projets/showtime.jpg" alt="Capture de Showtime" loading="lazy" width="1400" height="1003" /></div>
+						<div class="project__body">
+							<h3>Showtime</h3>
+							<p>Billetterie de concerts : catalogue d'événements, réservation et administration.</p>
+						</div>
+					</article>
+					<article class="project reveal">
+						<div class="project__media"><img src="img/projets/therightcorner.jpg" alt="Capture de TheRightCorner" loading="lazy" width="1400" height="1258" /></div>
+						<div class="project__body">
+							<h3>TheRightCorner</h3>
+							<p>Site de petites annonces : dépôt d'annonce, comptes utilisateurs, recherche par catégorie.</p>
+						</div>
+					</article>
+				</div>
+			</section>
 
-							<div class="skill">
-								<p>React</p>
-								<div class="progress">
-									<div class="determinate" style="width: 70%"></div>
-								</div>
-							</div>
+			<!-- Parcours -->
+			<section id="parcours" class="section section--tint">
+				<div class="wrap">
+					<header class="section__head">
+						<p class="eyebrow">Parcours</p>
+						<h2>Une reconversion assumée</h2>
+						<p class="section__intro">
+							Dix ans au contact des clients et des réseaux m'ont appris la rigueur,
+							l'écoute et le sens du service. Je les mets aujourd'hui au service du code.
+						</p>
+					</header>
 
+					<ol class="timeline">
+						<li class="reveal">
+							<span class="timeline__date">2022 — aujourd'hui</span>
+							<h3>Développeur Full Stack · YZY Digital</h3>
+							<ul>
+								<li>Outil de provisioning réseau pour un opérateur télécom (Angular, NestJS, scripts JavaScript) : analyse des besoins, développement, formation et support.</li>
+								<li>Intégration d'un ERP en assurance et parcours de souscription en ligne en Next.js.</li>
+								<li>Chef de projet agile sur un outil de workflow, avec une équipe de 8 développeurs.</li>
+							</ul>
+						</li>
+						<li class="reveal">
+							<span class="timeline__date">2022</span>
+							<h3>Coding Academy by Epitech</h3>
+							<p>Développeur web full stack, Bac+2 (RNCP 5). Projets en équipe, validés par un stage de 6 mois.</p>
+						</li>
+						<li class="reveal">
+							<span class="timeline__date">2018 — 2021</span>
+							<h3>Responsable opérationnel de comptes · SFR</h3>
+							<p>Suivi de la qualité de service, indicateurs, plans d'action, animation des comités d'exploitation et formation des clients.</p>
+						</li>
+						<li class="reveal">
+							<span class="timeline__date">2011 — 2018</span>
+							<h3>Support technique · SFR</h3>
+							<p>Du support niveau 1 au suivi dédié de flottes entreprises : incidents réseau, référent technique en back office.</p>
+						</li>
+					</ol>
+				</div>
+			</section>
+
+			<!-- Compétences -->
+			<section id="competences" class="section wrap">
+				<header class="section__head">
+					<p class="eyebrow">Compétences</p>
+					<h2>Ma boîte à outils</h2>
+				</header>
+
+				<div class="skills">
+					<div class="skills__group reveal">
+						<h3>Front-end</h3>
+						<ul class="chips">
+							<li>HTML / CSS</li>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>React</li>
+							<li>Next.js</li>
+							<li>Angular</li>
+							<li>Vue.js</li>
+						</ul>
+					</div>
+					<div class="skills__group reveal">
+						<h3>Back-end</h3>
+						<ul class="chips">
+							<li>Node.js</li>
+							<li>Express</li>
+							<li>NestJS</li>
+							<li>PHP</li>
+							<li>Laravel</li>
+							<li>Python</li>
+						</ul>
+					</div>
+					<div class="skills__group reveal">
+						<h3>Données &amp; outils</h3>
+						<ul class="chips">
+							<li>MySQL</li>
+							<li>MongoDB</li>
+							<li>Git / GitLab</li>
+							<li>Linux</li>
+							<li>Apache</li>
+							<li>Jira / ClickUp</li>
+							<li>Notion / Confluence</li>
+						</ul>
+					</div>
+					<div class="skills__group reveal">
+						<h3>Méthode</h3>
+						<ul class="chips">
+							<li>Agile</li>
+							<li>Gestion de projet</li>
+							<li>ITIL v4</li>
+							<li>Analyse des besoins</li>
+							<li>Formation utilisateurs</li>
+							<li>Réseaux fixe &amp; mobile</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact" class="section wrap">
+				<div class="contact reveal">
+					<div>
+						<p class="eyebrow">Contact</p>
+						<h2>Un projet, une mission ?</h2>
+						<p>Site vitrine, outil métier ou renfort sur une équipe : écrivez-moi, je réponds rapidement.</p>
+					</div>
+					<div class="contact__actions">
+						<a class="btn" href="mailto:anthonymaruenda@hotmail.com">anthonymaruenda@hotmail.com</a>
+						<div class="contact__links">
+							<a class="link" href="https://www.linkedin.com/in/anthony-maruenda" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+							<a class="link" href="https://github.com/anto77240" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+							<a class="link" href="cv/Maruenda%20Anthony%20CV%202.pdf" download>CV (PDF) <span aria-hidden="true">↓</span></a>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+			</section>
+		</main>
 
-		<div class="parallax-container valign-wrapper">
-			<div class="section no-pad-bot">
-				<div class="container">
-					<!-- <div class="row center"></div> -->
-				</div>
-			</div>
-			<div class="parallax"><img src="./img/code2.jpeg" alt="web development" /></div>
-		</div>
-
-		<div class="container">
-			<div id="portfolio" class="section">
-				<div class="row">
-					<h4  class="center">Mon PortFolio</h4>
-					<div class="carousel">
-						<a class="carousel-item" href=""><img src="./img/yowl.png" /></a>
-						<a style="text-align: center" class="carousel-item" href=""><img src="./img/planbmotos.png" /></a>
-						<a style="text-align: center" class="carousel-item" href=""><img src="./img/dashboard.png" /></a>
-						<a class="carousel-item" href=""><img src="./img/showtime.png" /></a>
-						<a class="carousel-item" href=""><img src="./img/therightcorner.png" /></a>
-						<a style="text-align: center" class="carousel-item" href="https://cwoodcreations.fr">Disponible en ligne<img src="./img/Cwood.png" /></a>
-						<a style="text-align: center" class="carousel-item" href="https://ceremoniesacree.fr">Disponible en ligne<img src="./img/Ceremonie_Sacree.png" /></a>
-				  </div>
-			  </div>
-		  </div>
-    </div>
-
-
-    <div  class="container">
-			<div class="section center">
-        <h5>Mon CV :</h5>
-				<a href="./cv/Maruenda Anthony CV 2.pdf"><img src="./img/pdf.png" alt="PDF icon"></a>
-			</div>
-		</div>
-
-
-
-		<footer class="page-footer teal">
-			<p style="text-align: center"> &#9400 Made by Anto</p>
+		<footer class="footer wrap">
+			<p>© <span id="year">2026</span> Anthony Maruenda</p>
+			<a href="#top" class="link">Haut de page ↑</a>
 		</footer>
 
-		<!--  Scripts-->
-		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="js/materialize.js"></script>
-		<script src="js/init.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
