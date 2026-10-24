@@ -352,6 +352,7 @@ a {
 	font-family: var(--serif);
 	font-size: 1.8rem;
 	font-weight: 600;
+	line-height: 1.15;
 }
 .facts span {
 	color: var(--muted);
@@ -431,6 +432,41 @@ a {
 	font-size: 1.35rem;
 }
 .project p {
+	color: var(--muted);
+	font-size: 0.98rem;
+}
+
+.work {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+	gap: 1.25rem;
+}
+.work__item {
+	display: grid;
+	align-content: start;
+	gap: 0.55rem;
+	padding: 1.6rem 1.5rem;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-top: 3px solid var(--accent);
+	border-radius: var(--radius);
+}
+.work__count {
+	font-family: var(--serif);
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.1;
+	color: var(--accent);
+}
+.work__item h3 {
+	font-size: 1.3rem;
+}
+.work__meta {
+	font-size: 0.85rem;
+	font-weight: 700;
+	color: var(--ink);
+}
+.work__item p:last-child {
 	color: var(--muted);
 	font-size: 0.98rem;
 }
